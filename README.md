@@ -1,3 +1,5 @@
+# This fork re-appends the file extensions to all file types including png and jpeg that were previously removed.
+--
 # ShareS - A Nodejs ShareX Upload Server
 [![Join Our Discord!](https://img.shields.io/badge/Join%20Our%20Discord!-5865F2?style=flat&logo=discord&logoColor=white&link=https://discord.gg/FWGKzpaszP)](https://discord.gg/FWGKzpaszP)
 ## Features
