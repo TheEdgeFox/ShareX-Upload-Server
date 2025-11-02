@@ -68,11 +68,7 @@ async function files(req, res) {
             ? newpath = `${__dirname}/../passwordUploads/${this.c.dateURLPath === true ? `${getDate('year')}/${getDate('month')}/${getDate('day')}/`: ""}${fileName}.${fileExt}`
             : newpath = `${__dirname}/../uploads/${this.c.dateURLPath === true ? `${getDate('year')}/${getDate('month')}/${getDate('day')}/`: ""}${fileName}.${fileExt}`;
         let returnedFileName;
-        if (!fileExt.includes('png') && !fileExt.includes('jpg') && !fileExt.includes('jpeg') && !fileExt.includes('md') && !fields.pupload) {
-            returnedFileName = `${fileName}.${fileExt}`;
-        } else {
-            returnedFileName = fileName;
-        }
+        returnedFileName = `${fileName}.${fileExt}`;
         if(fields.showCase) {
             fields.showCase = true
         }
